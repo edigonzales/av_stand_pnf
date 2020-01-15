@@ -1,0 +1,13 @@
+# 2016
+# In lokalem QGIS gemacht, wegen den geometryless tables.
+java -jar ili2gpkg/ili2gpkg-3.4.1/ili2gpkg.jar --dbfile stand_pnf_2016.gpkg --sqlEnableNull --strokeArcs --disableValidation --defaultSrsCode 2056 --createEnumTabs --models AMO_Grafik_LV95_PNF --schemaimport
+
+# 2017
+java -jar ili2gpkg/ili2gpkg-3.10.5/ili2gpkg.jar --dbfile stand_pnf_2017.gpkg --sqlEnableNull --strokeArcs --disableValidation --defaultSrsCode 2056 --createEnumTabs --models AMO_Grafik_LV95_PNF --schemaimport
+
+java -jar ili2gpkg/ili2gpkg-3.10.5/ili2gpkg.jar --dbfile stand_pnf_2017.gpkg --sqlEnableNull --strokeArcs --disableValidation --defaultSrsCode 2056 --createEnumTabs --models AMO_Grafik_LV95_PNF --export stand_pnf_2017.itf
+
+# 2018
+java -jar ili2gpkg/ili2gpkg-3.10.5/ili2gpkg.jar --dbfile stand_pnf_2018.gpkg --nameByTopic --sqlEnableNull --strokeArcs --disableValidation --defaultSrsCode 2056 --createEnumTabs --models AMO_Grafik_LV95_PNF --schemaimport
+
+java -jar ili2gpkg/ili2gpkg-3.10.5/ili2gpkg.jar --dbfile stand_pnf_2018.gpkg --sqlEnableNull --strokeArcs --disableValidation --defaultSrsCode 2056 --createEnumTabs --models AMO_Grafik_LV95_PNF --export stand_pnf_2018.itf
