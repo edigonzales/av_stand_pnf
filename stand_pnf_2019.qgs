@@ -31,7 +31,7 @@
     <layer-tree-layer source="./stand_pnf_2019.gpkg|layername=pnf_pnf" providerKey="ogr" checked="Qt::Unchecked" expanded="1" name="stand_pnf_2019 pnf_pnf" id="stand_pnf_2019_pnf_pnf_4ff07517_a7dc_48d0_a19a_4ad38d69d7b8">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer source="./stand_pnf_2019.gpkg|layername=pnf_pnf_geometry" providerKey="ogr" checked="Qt::Unchecked" expanded="1" name="stand_pnf_2019 pnf_pnf_geometry" id="stand_pnf_2019_pnf_pnf_geometry_8c47be2a_c7a5_4734_bb8d_6242d0bab7c4">
+    <layer-tree-layer source="./stand_pnf_2019.gpkg|layername=pnf_pnf_geometry" providerKey="ogr" checked="Qt::Checked" expanded="1" name="stand_pnf_2019 pnf_pnf_geometry" id="stand_pnf_2019_pnf_pnf_geometry_8c47be2a_c7a5_4734_bb8d_6242d0bab7c4">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer source="./gemeindegrenzen_lv95/hoheitsgrenzen_gemeindegrenze_lv95.shp" providerKey="ogr" checked="Qt::Checked" expanded="1" name="hoheitsgrenzen_gemeindegrenze_lv95" id="hoheitsgrenzen_gemeindegrenze_lv95_c1b517f2_aa60_4acf_acf8_72d22331b517">
@@ -60,10 +60,10 @@
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>2605792.68887028750032187</xmin>
-      <ymin>1203947.47745436918921769</ymin>
-      <xmax>2617933.31387028750032187</xmax>
-      <ymax>1241353.72745436918921769</ymax>
+      <xmin>2616653.79293120093643665</xmin>
+      <ymin>1220239.1335457400418818</ymin>
+      <xmax>2628794.41793120093643665</xmax>
+      <ymax>1257645.3835457400418818</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -102,9 +102,9 @@
         <legendlayerfile layerid="stand_pnf_2019_pnf_pnf_4ff07517_a7dc_48d0_a19a_4ad38d69d7b8" isInOverview="0" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" checked="Qt::Unchecked" open="true" name="stand_pnf_2019 pnf_pnf_geometry" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" checked="Qt::Checked" open="true" name="stand_pnf_2019 pnf_pnf_geometry" showFeatureCount="0">
       <filegroup hidden="false" open="true">
-        <legendlayerfile layerid="stand_pnf_2019_pnf_pnf_geometry_8c47be2a_c7a5_4734_bb8d_6242d0bab7c4" isInOverview="0" visible="0"/>
+        <legendlayerfile layerid="stand_pnf_2019_pnf_pnf_geometry_8c47be2a_c7a5_4734_bb8d_6242d0bab7c4" isInOverview="0" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" checked="Qt::Checked" open="true" name="hoheitsgrenzen_gemeindegrenze_lv95" showFeatureCount="0">
@@ -287,8 +287,15 @@
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
-        <columns/>
+      <attributetableconfig sortExpression="&quot;name&quot;" sortOrder="0" actionWidgetStyle="dropDown">
+        <columns>
+          <column hidden="0" type="field" name="ogc_fid" width="-1"/>
+          <column hidden="0" type="field" name="tid" width="-1"/>
+          <column hidden="0" type="field" name="name" width="411"/>
+          <column hidden="0" type="field" name="stand_am" width="-1"/>
+          <column hidden="0" type="field" name="bfsnr" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
+        </columns>
       </attributetableconfig>
       <conditionalstyles>
         <rowstyles/>
@@ -304,7 +311,7 @@
       <editable/>
       <labelOnTop/>
       <widgets/>
-      <previewExpression></previewExpression>
+      <previewExpression>"ogc_fid"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
     <maplayer refreshOnNotifyMessage="" type="vector" autoRefreshEnabled="0" maxScale="0" refreshOnNotifyEnabled="0" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" geometry="No geometry" autoRefreshTime="0" readOnly="0" minScale="1e+08">
@@ -926,10 +933,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer refreshOnNotifyMessage="" type="vector" labelsEnabled="0" simplifyAlgorithm="0" autoRefreshEnabled="0" maxScale="0" simplifyMaxScale="1" simplifyDrawingTol="1" simplifyLocal="1" refreshOnNotifyEnabled="0" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" geometry="Polygon" autoRefreshTime="0" readOnly="0" minScale="1e+08" simplifyDrawingHints="0">
       <extent>
-        <xmin>2480000</xmin>
-        <ymin>170000</ymin>
-        <xmax>2850000</xmax>
-        <ymax>1310000</ymax>
+        <xmin>2598658.19206087989732623</xmin>
+        <ymin>1221851.99767256993800402</ymin>
+        <xmax>2640229.93038331996649504</xmax>
+        <ymax>1261330.17740080994553864</ymax>
       </extent>
       <id>stand_pnf_2019_pnf_pnf_geometry_8c47be2a_c7a5_4734_bb8d_6242d0bab7c4</id>
       <datasource>./stand_pnf_2019.gpkg|layername=pnf_pnf_geometry</datasource>
@@ -1016,7 +1023,11 @@ def my_form_open(dialog, layer, feature):
         <rotation/>
         <sizescale/>
       </renderer-v2>
-      <customproperties/>
+      <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>"T_Id"</value>
+        </property>
+      </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
@@ -1063,7 +1074,11 @@ def my_form_open(dialog, layer, feature):
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
       <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
-        <columns/>
+        <columns>
+          <column hidden="0" type="field" name="T_Id" width="-1"/>
+          <column hidden="0" type="field" name="afrom" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
+        </columns>
       </attributetableconfig>
       <conditionalstyles>
         <rowstyles/>
@@ -1079,7 +1094,7 @@ def my_form_open(dialog, layer, feature):
       <editable/>
       <labelOnTop/>
       <widgets/>
-      <previewExpression></previewExpression>
+      <previewExpression>"T_Id"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
     <maplayer refreshOnNotifyMessage="" type="vector" autoRefreshEnabled="0" maxScale="0" refreshOnNotifyEnabled="0" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" geometry="No geometry" autoRefreshTime="0" readOnly="0" minScale="1e+08">
